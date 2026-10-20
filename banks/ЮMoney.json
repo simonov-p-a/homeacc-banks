@@ -1,0 +1,14 @@
+{
+  "name": "ЮMoney",
+  "site": "https://yoomoney.ru",
+  "binding": {
+    "type": "oauth",
+    "authorizeUrl": "https://yoomoney.ru/oauth/authorize",
+    "tokenUrl": "https://yoomoney.ru/oauth/token",
+    "apiBase": "https://yoomoney.ru/api",
+    "scope": "account-info operation-history",
+    "registerUrl": "https://yoomoney.ru/myservices/new",
+    "redirectUri": "https://localtest.me:18791/cb",
+    "instructions": "Один раз: зарегистрируйте своё приложение на yoomoney.ru — название любое (HomeAcc), адрес сайта — любой живой https-сайт, обратный адрес ровно как в форме (только https). Галочку client_secret ставить необязательно. Полученный client_id вставьте в форму."
+  }
+}

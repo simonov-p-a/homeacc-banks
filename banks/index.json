@@ -2,6 +2,6 @@
   "v": 2,
   "updated": "2026-10-21",
   "banks": [
-    { "id": "yoomoney", "name": "ЮMoney", "repo": "simonov-p-a/homeacc-bank-yoomoney" }
+    { "id": "yoomoney", "name": "ЮMoney", "repo": "simonov-p-a/homeacc-bank-yoomoney", "regNum": "2058" }
   ]
 }

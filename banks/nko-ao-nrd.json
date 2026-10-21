@@ -1,6 +1,7 @@
 {
   "name": "НКО АО НРД",
   "regNum": "3294",
+  "site": "https://www.nsd.ru",
   "binding": {
     "type": "manual",
     "steps": [
@@ -15,7 +16,7 @@
       }
     ],
     "manual": {
-      "rows": 12
+      "rows": "дд.мм.гггг; сумма; описание"
     }
   }
 }

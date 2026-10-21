@@ -3,6 +3,24 @@
   "site": "https://yoomoney.ru",
   "binding": {
     "type": "oauth",
+    "steps": [
+      { "text": "Один раз.", "bold": true },
+      { "text": "Зарегистрируйте своё приложение на yoomoney.ru — вкладка «Мои приложения» → «Создать». Название любое (HomeAcc), адрес сайта — любой живой https-сайт, обратный адрес ровно как в форме (только https). Галочку client_secret ставить необязательно." },
+      { "text": "Нажмите «① Регистрация» — откроется страница; скопируйте оттуда client_id в форму и сохраните её." },
+      { "text": "Нажмите «② Разрешить доступ» — браузер спросит согласие на чтение истории. Подтвердите — код я поймаю сам." },
+      { "text": "Готово. Операции подтянутся сразу и далее — сами, при каждом запуске." }
+    ],
+    "buttons": [
+      { "label": "① Регистрация", "action": "register" },
+      { "label": "② Разрешить доступ", "action": "auth", "primary": true },
+      { "label": "③ Загрузить операции", "action": "sync" }
+    ],
+    "fields": [
+      { "name": "clientId", "label": "client_id", "placeholder": "получите на шаге ①" },
+      { "name": "clientSecret", "label": "client_secret (необязательно)", "placeholder": "если включили проверку" },
+      { "name": "redirectUri", "label": "Обратный адрес (redirect_uri)", "placeholder": "https://localtest.me:18791/cb" }
+    ],
+    "codeInput": true,
     "authorizeUrl": "https://yoomoney.ru/oauth/authorize",
     "tokenUrl": "https://yoomoney.ru/oauth/token",
     "apiBase": "https://yoomoney.ru/api",

@@ -1,5 +1,7 @@
 {
-  "v": 1,
+  "v": 2,
   "updated": "2026-10-21",
-  "files": ["ЮMoney.json"]
+  "banks": [
+    { "id": "yoomoney", "name": "ЮMoney", "repo": "simonov-p-a/homeacc-bank-yoomoney" }
+  ]
 }
